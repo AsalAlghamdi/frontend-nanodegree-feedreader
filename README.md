@@ -3,7 +3,7 @@
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
 ## How to Run this Project?
-Download the project as a Zip file to your device then extract the file. Go to index.html file and open it by the browser of your device.
+Download the project as a Zip file to your device then extract the file. Go to `index.html` file and open it by the browser of your device.
 
 ## Why this Project?
 
