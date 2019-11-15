@@ -44,13 +44,13 @@ $(function() {
         const body = document.querySelector('body');
         const menuIcon = document.querySelector('.menu-icon-link');
         it('hiding/showing menu work correctly', function () {
-            expect(body.className).toContain('menu-hidden');
+            expect(body.classList).toContain('menu-hidden');
         });
         it('menu button change the visibility of the menu when it is clicked', function (){
             $(".menu-icon-link").click();
-            expect(body.className).not.toContain('menu-hidden');
+            expect(body.classList).not.toContain('menu-hidden');
             $(".menu-icon-link").click();
-            expect(body.className).toContain('menu-hidden');
+            expect(body.classList).toContain('menu-hidden');
         });
     });
     
@@ -70,9 +70,9 @@ $(function() {
             newFeed = '';
         beforeEach(function (done){
             loadFeed(0, function(){
-                oldFeed = $('.header-title').text();
+                oldFeed = $('.feed').html();
                 loadFeed(1, function () {
-                    newFeed = $('.header-title').text();
+                    newFeed = $('.feed').html();
                     done();
                 });
             });
